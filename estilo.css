@@ -1,0 +1,213 @@
+body {
+    margin:auto;
+    padding: auto;
+    font-family: helvetica;
+    font-size: 16px;
+    background-color:#f1f1f1;
+}
+header {
+    text-align: center;
+    color: #6e54e4;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;     
+}
+/* ---------------------------------- MENU ---*/
+nav ul {
+    padding: 30px;
+    list-style-type: none;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    margin:0px;
+    padding:0px;
+    background-color: #FF7F00;
+    top:0px;
+}
+nav ul li {    
+    margin-right: 0px;
+    list-style-type: inline;
+    display:inline-block; 
+    position:relative;
+}
+nav ul li a {    
+    display: block;
+    padding:20px;
+    text-decoration: none;
+    font-family:arial;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+/*efeito de transição suave para o texto*/
+nav ul li a:hover {
+    color: #000000;  
+}
+/*efeitos de transição da barra */
+nav ul li ::after {
+    content: "";
+    display:block;
+    width:0px;
+    height:2px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transition:width 0.3s;
+}
+nav ul li :hover ::after {
+    width:100%
+}
+/* -------------------------------- PÁGINA: INDEX ---*/
+.imgIndex {
+    padding: 70px;
+    display:flex;
+    align-items: center;
+    margin: 40px;
+}
+.imageIndex {
+    flex: 0 0 auto;
+    margin-right: 20px;   
+}
+/* -- texto ao lado da imagem -- */
+.textoIndex {
+    font-size: 16px;
+    font-family:Verdana, sans-serif;
+    flex:1;
+    text-align: center;
+}
+.icone {   
+    display:flex;
+    text-align:center;  
+    float:right; 
+    box-sizing: border-box; 
+    width: 30px;
+    height: 30px;   
+    position:relative;                                 
+}
+/* ---------------------------- PÁGINA: FORMAÇÃO ---*/
+.txtForm {
+    padding: 40px;
+    display:flex;
+    align-items: center;
+    margin: 40px;    
+}
+.textForm {
+    flex: 0 0 auto;
+    margin-right: 20px;       
+}
+.imgForm {
+    font-size: 16px;
+    font-family:Verdana, sans-serif;
+    flex:1;
+    text-align: flex;   
+}
+.certificado {   
+    display:flex; 
+    float:center; 
+    box-sizing: border-box; 
+    width: 80px;
+    height: 80px;                                        
+}
+/* ---------------------------- PÁGINA: PORTIFÓLIO ---*/
+.portfoliop {
+    padding: 70px;
+    display:flex;
+    align-items: center;
+    margin: 40px;
+}
+.textoPort {
+    font-size: 18px;
+    font-family:Verdana, sans-serif;
+    flex:1;
+    text-align: center;
+}
+.imagePort {
+    flex: 0 0 auto;
+    margin-right: 20px;    
+}
+/* --------------------------- PÁGINA: CONTATO ---*/
+button {
+    padding: 10px ;
+    margin-right: 550px;
+    margin-top: 0px;
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;     
+}
+button:hover {
+    background-color: #fffdfdab;
+    color:#FF7F00;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #FF7F00;
+}
+form {
+    display: flex;
+    flex-direction:column;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#msg {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contato {           
+    display:flex;
+    text-align:center;  
+    float:right; /* Alinha as imagens  */
+    box-sizing: border-box; 
+    width: 30px;
+    height: 30px;   
+    position:relative;                                         
+}
+/* --------------------------- RODAPÉ ---*/
+footer {
+    width: 100%;
+    position: fixed;    
+    text-align: center;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    background-color: #bbbbbb;         
+}
+/*para todos os titulos */
+.titulo {
+    text-align: center;
+    display:flex;
+    margin: 40 px;
+    color: #FF7F00;
+}
+#content {
+    padding: 20px;
+    color: #333;
+    text-align: center;
+    padding-top: 10%;
+}
